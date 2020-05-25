@@ -1,0 +1,21 @@
+package prova;
+
+import java.util.Calendar;
+import java.util.Date;
+
+public class FormaDePagamento implements I_Pagamento{
+	public String cpf = "";
+	String hoje = Calendar.getInstance().getTime().toString();
+	
+	@Override
+	public String nome() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public double Preco() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

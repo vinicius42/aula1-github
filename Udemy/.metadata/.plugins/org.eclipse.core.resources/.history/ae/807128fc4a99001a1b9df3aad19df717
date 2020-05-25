@@ -1,0 +1,11 @@
+package exercicio_3_secao8;
+
+public class Aluno {
+	public String nome = "";
+	public double nota = 0.0;
+	
+	public double NotaFinal() {
+		return nota + nota + nota;
+	}
+
+}

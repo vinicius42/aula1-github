@@ -1,0 +1,29 @@
+package turma;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+public class Turma {
+	public String id = "";
+	public String nome = "";
+	public String curso = "";
+	public ArrayList<Aluno> aluno = new ArrayList<Aluno>();
+	
+	
+	Turma(){};
+	Turma(String id){
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection con = DriverManager.getConnection("jdbc:mysql:localhost/turma", "root", "");
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

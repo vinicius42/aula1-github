@@ -1,0 +1,19 @@
+package secao10;
+
+public class ForEach {
+
+	public static void main(String[] args) {
+		String [] vetor = new String[] {"Maria", "Bob", "Alex"};
+		
+		for (int i = 0; i < vetor.length; i++) {
+			System.out.println(vetor[i]);
+		}
+		// tipo do vetor, apelido para o vetor(pode ser qualquer um), depois a coleção ou seja o nome da variável
+		for (String string : vetor) {
+			// Aqui ele irá percorrer todos os elementos do vetor e chamar todos os elementos de string
+			
+		}
+
+	}
+
+}

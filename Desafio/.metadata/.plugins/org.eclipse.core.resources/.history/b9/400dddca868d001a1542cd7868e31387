@@ -1,0 +1,9 @@
+package prova;
+
+public class FormaDePagamento{
+	public String cpf = "";
+	public double valor = 0.0;
+	
+
+
+}

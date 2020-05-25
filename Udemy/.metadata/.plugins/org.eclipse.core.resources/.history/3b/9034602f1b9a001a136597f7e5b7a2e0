@@ -1,0 +1,49 @@
+package exercicio_secao9;
+
+public class Conta {
+	private double conta;
+	private String nome;
+	private double valor;
+	
+	public double getConta() {
+		return conta;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public double getValor() {
+		return valor;
+	}
+
+	public Conta() {
+		
+	}
+	
+	public Conta(double conta, String nome, double valor) {
+		this.conta = conta;
+		this.nome = nome;
+		this.valor = valor;
+	}
+	
+	public Conta(double conta, String nome) {
+		this.conta = conta;
+		this.nome = nome;
+	}
+	
+	public double Deposito(double valor) {
+		return this.valor + valor;
+	}
+	
+	public double Retirar(double retirar, double valor) {
+		return valor - retirar - 5;
+	}
+	
+	
+
+}

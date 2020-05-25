@@ -1,0 +1,32 @@
+package prova;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.Calendar;
+import java.util.Date;
+
+public class Credito extends FormaDePagamento {
+	public String operadora = "";
+	public int numero = 0;
+	public int seguranca = 0;
+	public String data = "";
+	public double valor = 0.0;
+	
+	public Credito(double v, String cpf) {
+		valor = v;
+	}
+	
+	public boolean Pagar(double pagar, String cpf) {
+		try {
+			return true;
+		} catch (Exception e) {
+			// TODO: handle exception
+			return false;
+		}
+
+		
+	}
+
+}

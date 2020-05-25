@@ -1,0 +1,16 @@
+package prova;
+
+public class Digital extends FormaDePagamento{
+	public String email = "";
+	public int id;
+	
+	public boolean Pagar(String moeda, double valor, String cpf) {
+		try {
+			System.out.println(this.hoje);
+			return true;
+		} catch (Exception e) {
+			// TODO: handle exception
+			return false;
+		}
+	}
+}

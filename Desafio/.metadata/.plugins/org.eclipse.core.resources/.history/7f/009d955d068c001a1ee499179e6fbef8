@@ -1,0 +1,10 @@
+package prova;
+
+import java.text.NumberFormat;
+
+public class Conta extends FormaDePagamento {
+	public NumberFormat fmt = NumberFormat.getCurrencyInstance();
+	public long NumeroConta;
+	public String name;
+
+}

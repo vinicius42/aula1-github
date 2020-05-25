@@ -1,0 +1,10 @@
+package secao10;
+
+public class Matriz {
+
+	public static void main(String[] args) {
+		// Matriz é vetor de vetor
+
+	}
+
+}

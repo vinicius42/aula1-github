@@ -1,0 +1,21 @@
+package secao10;
+
+public class TipoReferencia {
+
+	public static void main(String[] args) {
+		// Tipo primitivo (tipo valor): int, double, String, etc
+			// Variáveis são caixas
+		
+		// Tipo classe (tipo referência): usufrui de todos os recursos OO
+			// Variáveis são ponteiros
+		
+		// Desalocação de memória
+		  // Garbage collector
+			// É o processo que automatiza o gerenciamento de memória de um programa em execução
+			// Um objeto que perdeu a referência, vai ser desalocado pelo garbage e liberando memória
+		  // Desalocação por escopo
+			// Variáveis locais são desalocadas imediatamente assim que seu escopo local sai de execução. Ou seja o processo termina 
+		
+	}
+
+}

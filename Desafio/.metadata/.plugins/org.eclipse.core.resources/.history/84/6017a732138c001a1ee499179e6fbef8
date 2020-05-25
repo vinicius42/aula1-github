@@ -1,0 +1,55 @@
+package prova;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.Calendar;
+import java.util.Date;
+
+public class Credito extends FormaDePagamento {
+	public String operadora = "";
+	public int numero = 0;
+	public int seguranca = 0;
+	public String data = "";
+	
+	
+	private int CalcularDiaria() throws ParseException {
+		// 1° Converter as String em Date
+		Date d1, d2;
+		d1 = new SimpleDateFormat("dd/MM/yyyy").parse(CheckIn); 
+		// Toda vez que tiver Parse, podemos ter erro. Assim temos que colocar o throw ou try/catch
+		// Publicar o erro pro consumidor, utiliza o throw
+		
+		// 2° Converter os objetos "Date" em "Calendar"
+		Calendar cd1 = Calendar.getInstance();// Construído uma data calendar dentro do getInstance
+		cd1.setTime(d1);
+		
+		Calendar cd2 = Calendar.getInstance();
+		cd2.setTime(d2);
+		
+		// Precisamos do "localdate", pois ele copia a data conforme o SO
+		LocalDate ld1 = LocalDate.of(cd1.get(Calendar.YEAR), 
+									 cd1.get(Calendar.MONTH), 
+									 cd1.get(Calendar.DAY_OF_MONTH)); // O método of vai converter 3 valores em uma data local
+		
+		LocalDate ld2 = LocalDate.of(cd2.get(Calendar.YEAR), 
+				 cd2.get(Calendar.MONTH), 
+				 cd2.get(Calendar.DAY_OF_MONTH));
+		
+		Period periodo = Period.between(ld1, ld2); // Cálculo do período entre elas
+		
+		return periodo.getDays();
+	}
+	public boolean pagar(String data, double pagar) {
+		try {
+			return true;
+		} catch (Exception e) {
+			// TODO: handle exception
+			return false;
+		}
+
+		
+	}
+
+}

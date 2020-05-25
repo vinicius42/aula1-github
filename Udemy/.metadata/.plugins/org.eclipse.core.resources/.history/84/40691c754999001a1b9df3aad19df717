@@ -1,0 +1,16 @@
+package exercicio_2_secao8;
+
+public class Empregado {
+	public String nome = "";
+	public double salario = 0.0;
+	public double imposto = 0.0;
+	
+	public double SalarioLiquido () {
+		return salario - imposto;
+	}
+	
+	public void AumentoSalário(double porcentagem) {
+		(salario - imposto) * porcentagem;
+	}
+
+}

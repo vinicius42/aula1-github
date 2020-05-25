@@ -1,0 +1,27 @@
+package exercicio_secao10_lista;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+		
+		System.out.println("Quantos empregados serão registrados ?");
+		int numero = leia.nextInt();
+		
+		List<Integer> aumento = new ArrayList<Integer>();
+		
+		for (Integer x : aumento) {
+			System.out.println("Empregado #" + x);
+			System.out.print("Id: ");
+			leia.nextLine();
+			Integer id = leia.nextInt();
+			
+		}
+
+	}
+
+}

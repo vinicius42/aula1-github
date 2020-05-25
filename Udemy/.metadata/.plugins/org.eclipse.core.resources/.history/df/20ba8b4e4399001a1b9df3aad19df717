@@ -1,0 +1,25 @@
+package secao8;
+
+public class Produto {
+	public String nome = "";
+	public double preco = 0.0;
+	public int quantidade = 0;
+	
+	public double ValorTotalEstoque() {
+		return preco * quantidade;
+	}
+	
+	public void AddProduto(int quantidade) {
+		this.quantidade += quantidade; // O segundo quantidade é do parâmetro add produto
+		// Quando uso thisstou sendo específico que quero acessar o atributo da classe e não parâmetro
+	}
+	
+	public void RemoverProduto (int quantidade) {
+		this.quantidade -= quantidade;
+	}
+	
+	public String toString() {
+		
+	}
+
+}

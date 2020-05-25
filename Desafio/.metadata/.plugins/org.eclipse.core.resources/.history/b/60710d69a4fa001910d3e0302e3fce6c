@@ -1,0 +1,19 @@
+package ascii;
+
+import java.io.*;  
+
+public class Ascii1{  
+        public static void main(String[] args) throws IOException{  
+            File f=new File("testeAscii.txt");  
+            FileOutputStream fop=new FileOutputStream(f);  
+            if(f.exists()){  
+            String str="This data is written through the program";  
+                    fop.write(str.getBytes());  
+                    fop.flush();  
+                    fop.close();  
+                    System.out.println("The data has been written"<img src="http://javafree.uol.com.br/forum/images/smiles/icon_wink.gif">;  
+                    }  
+                    else  
+                        System.out.println("This file is not exist"<img src="http://javafree.uol.com.br/forum/images/smiles/icon_wink.gif">;  
+        }  
+    }

@@ -1,0 +1,21 @@
+package exercicio_secao10;
+
+import java.util.Scanner;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+		
+		Quarto[] quarto = new Quarto[alugado];
+		
+		System.out.println("Quantos quartos serão alugados ?");
+		int alugado = leia.nextInt();
+		
+		for (int i = 0; i < args.length; i++) {
+			
+		}
+
+	}
+
+}

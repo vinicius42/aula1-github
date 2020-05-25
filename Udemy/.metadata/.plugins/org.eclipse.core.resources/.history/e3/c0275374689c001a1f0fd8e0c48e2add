@@ -1,0 +1,7 @@
+package secao10;
+
+public class Produto {
+	private String name;
+	private double preco;
+
+}

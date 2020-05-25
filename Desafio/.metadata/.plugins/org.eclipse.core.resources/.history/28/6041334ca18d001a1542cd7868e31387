@@ -1,0 +1,52 @@
+package prova;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
+
+public class Debito extends FormaDePagamento {
+	public String banco = "";
+	public String agencia = "";
+	public String conta = "";
+	public double valor = 0.0;
+
+	public Debito(String b, String a, String c, double v, String cpf) {
+		banco = b;
+		agencia = a;
+		conta = c;
+		valor = v;
+	}
+
+	public boolean Pagar(Debito sacada, Debito depositada, double total) {
+		String sql = "";
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost/Coisas", "root", "");
+			sql = "Insert into formaPagamento values ('" + this.cpf + "'," + "'" + this.hoje + "'," + "'" + this.telefone
+					+ "')";
+			/*
+			 * sql2 = "Insert into Endereco values ('" + this.logradouro + "'," + "'" +
+			 * this.numero + "'," + "'" + this.cep + "'," + "'" + this.bairro + "'," + "'" +
+			 * this.cidade + "'," + "'" + this.uf + "'," + "'" + this.pais + "')";
+			 */
+
+			System.out.println(sql);
+			Statement comando = con.createStatement();
+			comando.execute(sql);
+			return true;
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
+		}
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package secao10;
+
+import java.util.List;
+
+public class Listas {
+
+	public static void main(String[] args) {
+		// Na lista você vai add ou removendo elementos conforme necessidade, diferente do vetor
+		// Lista inicia vazia
+		
+		List<Integer> list;
+
+	}
+
+}

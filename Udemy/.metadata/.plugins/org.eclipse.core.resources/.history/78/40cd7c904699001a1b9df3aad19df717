@@ -1,0 +1,11 @@
+package exercicio_1_secao8;
+
+public class Retangulo {
+	public double largura = 0.0;
+	public double altura = 0.0;
+	
+	public double Area() {
+		return largura * altura;
+	}
+
+}

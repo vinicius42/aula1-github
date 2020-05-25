@@ -1,0 +1,25 @@
+package exercicio_secao9;
+
+public class Conta {
+	public double conta;
+	public String nome;
+	public double valor;
+	
+	public Conta() {
+		
+	}
+	
+	public Conta(double conta, String nome, double valor) {
+		this.conta = conta;
+		this.nome = nome;
+		this.valor = valor;
+	}
+	
+	public Conta(double conta, String nome) {
+		this.conta = conta;
+		this.nome = nome;
+	}
+	
+	
+
+}

@@ -1,0 +1,37 @@
+package exercicio_secao10;
+
+import java.util.Scanner;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+		
+		
+		System.out.println("Quantos quartos serão alugados ?");
+		int alugado = leia.nextInt();
+		Quarto[] vetor = new Quarto[alugado];
+		
+		for (int i = 1; i < vetor.length; i++) {
+			System.out.println("Alugado #" + i);
+			leia.nextLine();
+			System.out.println("Nome: " + nome);
+			String nome = leia.nextLine();
+			System.out.println("Email: " + email);	
+			String email = leia.nextLine();
+			int quarto = leia.nextInt();
+			vetor[i] = new Quarto(nome, email);
+		}
+		
+		System.out.println();
+		System.out.println("Quartos ocupados: ");
+		for (int i = 0; i < 10; i++) {
+			if(vetor[i] != null) {
+				System.out.println(i + ": " + vetor[i]);
+			}
+		}
+		leia.close();
+
+	}
+
+}

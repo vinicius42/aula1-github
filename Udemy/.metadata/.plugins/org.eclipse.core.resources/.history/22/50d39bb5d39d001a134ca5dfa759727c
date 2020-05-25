@@ -1,0 +1,17 @@
+package exercicio_secao10_lista;
+
+import java.util.Scanner;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+		
+		System.out.println("Quantos empregados serão registrados ?");
+		int numero = leia.nextInt();
+		
+		
+
+	}
+
+}

@@ -1,0 +1,49 @@
+package prova;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		String data = "";
+		Maquina maq = new Maquina();
+		I_Produto pedido = maq.EntregaProduto("Salgadinho");
+		maq.produto.add(pedido);
+		System.out.println(pedido.nome() + " - " + pedido.preco());
+		
+		pedido = maq.EntregaProduto("Refrigerante");
+		maq.produto.add(pedido);
+		System.out.println(pedido.nome() + " - " + pedido.preco());
+		
+		System.out.println("Total: " + maq.CalcularTotal());
+		
+		
+		// Debito em conta
+		Debito saque = new Debito("Bradesco", "3656", "2565", maq.CalcularTotal());
+		Debito deposito = new Debito("Bradesco", "3656", "2565", maq.CalcularTotal());
+		saque.Pagar(deposito, saque, maq.CalcularTotal());
+		
+		
+		// Cartão de crédito
+		data = new SimpleDateFormat("03/05/2020").format(new Date());
+		Date today = Calendar.getInstance().getTime();
+		
+		Credito credito = new Credito();
+		credito.Pagar(data, maq.CalcularTotal(), "888");
+		
+		System.out.println(today);
+		// Digital
+		Digital digital = new Digital();
+		digital.Pagar(data, "Real", maq.CalcularTotal(), "888");
+		
+		
+
+		
+		
+		
+
+	}
+
+}

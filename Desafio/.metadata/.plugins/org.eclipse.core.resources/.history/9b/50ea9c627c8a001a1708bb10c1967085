@@ -1,0 +1,5 @@
+package prova;
+
+public class FormaDePagamento implements I_Pagamento{
+
+}

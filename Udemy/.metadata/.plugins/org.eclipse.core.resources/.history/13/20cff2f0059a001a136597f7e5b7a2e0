@@ -1,0 +1,13 @@
+package secao8;
+
+public class MembrosEstaticos {
+
+	public static void main(String[] args) {
+		// Membros instanciados possuem um comportamento diferente para cada um
+		
+		// Membro Estático, não pode ser instanciado, não criamos objeto daquela classe
+			// Math.sqrt(double)
+
+	}
+
+}

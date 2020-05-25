@@ -1,0 +1,10 @@
+package secao8;
+
+public class MembrosEstaticos {
+
+	public static void main(String[] args) {
+		// Membros instanciados possuem um comportamento diferente
+
+	}
+
+}

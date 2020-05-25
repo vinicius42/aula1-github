@@ -1,0 +1,28 @@
+package secao10;
+
+public class Boxing {
+
+	public static void main(String[] args) {
+		// Boxing
+			// É o processo de conversão de um objeto tipo valor para um objeto tipo referência compatível
+		
+		// Exemplo
+		int x = 20;
+		Object obj = x;
+		
+		// Unboxing
+			// É o processo de conversão de um objeto tipo referência(classe) para um objeto tipo referência compatível
+		
+		// Exemplo
+		// Estamos desencaixotando e transformando o objeto em tipo valor e não mais tipo Object
+		int y = (int) obj; // Exemplo 1
+		
+		
+		// Wrapper classes
+			// Classes equivalentes aos tipos primitivos
+				// Integer(int), Float(float), Double(double), etc
+			// São mais utilizadas em campos que podem ter valor nulo, ou seja, não são obrigatórios
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package ascii;
+
+import java.io.*;  
+
+public class Ascii1{  
+        public static void main(String[] args){  
+        	FileInputStream stream = new FileInputStream("D://testeAscii.txt"); 
+            InputStreamReader streamReader = new InputStreamReader(stream); 
+            BufferedReader reader = new BufferedReader(streamReader); 
+        }  
+    }

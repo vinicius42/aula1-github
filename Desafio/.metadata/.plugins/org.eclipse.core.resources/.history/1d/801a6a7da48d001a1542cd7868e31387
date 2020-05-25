@@ -1,0 +1,12 @@
+package prova;
+
+import java.util.Calendar;
+import java.util.Date;
+
+public class FormaDePagamento{
+	public String cpf = "";
+	String hoje = Calendar.getInstance().getTime().toString();
+	public String formapag = "";
+	public double valor = 0.0;
+
+}

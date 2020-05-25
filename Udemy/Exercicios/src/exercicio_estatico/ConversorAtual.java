@@ -1,0 +1,11 @@
+package exercicio_estatico;
+
+public class ConversorAtual {
+	public static final double IOF = 0.06;
+	
+	public static double Calculo(double dolar, double compra) {
+		double total = dolar * compra;
+		return total + (IOF * total);
+	}
+
+}

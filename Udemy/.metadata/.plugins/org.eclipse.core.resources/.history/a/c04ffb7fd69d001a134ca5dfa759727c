@@ -1,0 +1,41 @@
+package exercicio_secao10_lista;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+		
+		System.out.println("Quantos empregados serão registrados ?");
+		int numero = leia.nextInt();
+		
+		List<Empregado> list = new ArrayList<Integer>();
+		
+		for (int i = 0; i < numero; i++) {
+			System.out.println("Empregado #" + i);
+			System.out.print("Id: ");
+			leia.nextLine();
+			Integer id = leia.nextInt();
+			System.out.print("Nome: ");
+			String name = leia.nextLine();
+			System.out.print("Salário: ");
+			Double salario = leia.nextDouble();
+			list.add(new Empregado(id, name, salario));
+		}
+		
+		System.out.print("Entre com o id do empregado que irá terá um aumento de salário: ");
+		if(list.indexOf(leia.nextInt())) {
+			
+		}
+		
+		int x = list.indexOf(leia.nextInt());
+		
+		
+		
+
+	}
+
+}

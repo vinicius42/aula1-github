@@ -1,0 +1,10 @@
+package prova;
+
+import java.util.ArrayList;
+
+import polimorfismo_interface.I_item;
+
+public class Cart {
+	ArrayList<I_Pagamento> Pagamento = new ArrayList<I_Pagamento>();
+
+}

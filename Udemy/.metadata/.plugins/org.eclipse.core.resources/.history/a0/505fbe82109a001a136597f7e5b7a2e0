@@ -1,0 +1,47 @@
+package secao9;
+
+public class Produto {
+
+	public String name;
+	public double price;
+	public int quantity;
+	
+	
+	public Produto() {// Construtores não possuem tipagem, ou seja, é apenas "public Produto" e não "public double Produto"
+		
+	}
+	
+	public Produto(String nome, double preco, int quantidade) {
+		this.name = nome; // A palavra this refere-se ao próprio objeto
+		this.price = preco;
+		this.quantity = quantidade;
+	}
+	
+	// Sobrecarga é um recurso que uma classe possui de oferecer mais de uma operação com o mesmo nome, porém com diferentes
+	// listas de parâmetros
+	
+	// Exemplo de sobrecarga
+	
+	public Produto(String nome, double preco) {
+		this.name = nome; // A palavra this refere-se ao próprio objeto
+		this.price = preco;
+		quantity = 0; // Opcional
+	}
+
+	public double totalValueInStock() {
+		return price * quantity;
+	}
+
+	public void addProducts(int quantity) {
+		this.quantity += quantity;
+	}
+
+	public void removeProducts(int quantity) {
+		this.quantity -= quantity;
+	}
+
+	public String toString() {
+		return name + ", $ " + String.format("%.2f", price) + ", " + quantity + " units, Total: $ "
+				+ String.format("%.2f", totalValueInStock());
+	}
+}

@@ -1,0 +1,12 @@
+package exercicio_secao10_lista;
+
+public class Empregado {
+	private Integer id;
+	private String name;
+	private Double salario;
+	
+	public double AumentoSalario(double porcentagem) {
+		return salario * porcentagem;
+	}
+
+}

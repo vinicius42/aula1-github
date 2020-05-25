@@ -1,0 +1,25 @@
+package secao10;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Listas {
+
+	public static void main(String[] args) {
+		// Na lista você vai add ou removendo elementos conforme necessidade, diferente do vetor
+		// Lista inicia vazia
+		
+		List<String> list = new ArrayList<>(); // Lista não acc tipos primitivos, não posso colocar o "int".
+		
+		list.add("Maria");
+		list.add("Alex");
+		list.add("Bob");
+		list.add("Anna");
+		
+		for (String lista : list) {
+			System.out.println(lista);
+		}
+
+	}
+
+}

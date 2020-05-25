@@ -1,0 +1,31 @@
+package secao10;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Listas {
+
+	public static void main(String[] args) {
+		// Na lista você vai add ou removendo elementos conforme necessidade, diferente do vetor
+		// Lista inicia vazia
+		
+		List<String> list = new ArrayList<>(); // Lista não acc tipos primitivos, não posso colocar o "int".
+		
+		list.add("Maria");
+		list.add("Alex");
+		list.add("Bob");
+		list.add("Anna");
+		list.add(2, "Marco");
+		
+		System.out.println(list.size()); // Tamanho da lista
+		
+		for (String x : list) {
+			System.out.println(x);
+		}
+		
+		// Pega um valor x do tipo "String" e me retorna se esse char.At é igual a M
+		list.removeIf(x -> x.charAt(0) == 'M');
+
+	}
+
+}

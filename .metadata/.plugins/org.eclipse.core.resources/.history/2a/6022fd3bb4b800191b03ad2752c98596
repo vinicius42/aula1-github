@@ -1,0 +1,14 @@
+package desafio;
+
+import java.util.Scanner;
+
+public class Desafio_idade {
+
+	public static void main(String[] args) {
+		int idade = 0;
+		Scanner teclado = new Scanner(System.in);
+		idade = teclado.next();
+
+	}
+
+}

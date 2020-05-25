@@ -1,0 +1,6 @@
+package exercicio_estatico;
+
+public class ConversorAtual {
+	public static final double IOF = 0.06;
+
+}

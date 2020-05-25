@@ -1,0 +1,53 @@
+package exercicio_secao9;
+
+import java.util.Scanner;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+
+		System.out.println("Entre com o número da conta: ");
+		int conta = leia.nextInt();
+
+		System.out.println("Entre com o nome da conta: ");
+		leia.nextLine();
+		String nome = leia.nextLine();
+
+		System.out.println("Deseja depositar algum valor ? (s/n)");
+		char resposta = leia.next().charAt(0);
+
+		Conta count;
+
+		if (deposito.equals("s")) {
+			System.out.println("Entre o valor do depósito: ");
+			double valor = leia.nextDouble();
+			
+			count = new Conta(conta, nome, valor);
+			System.out.println("Dados da conta: ");
+			System.out.println("Conta: " + count.conta + ", Nome: " + count.nome + ", Balance: " + valor);
+			
+			System.out.println("Entre com um valor de depósito: ");
+			valor = leia.nextDouble();
+			
+			System.out.println("Dados atualizados: ");
+			System.out.println("Conta: " + count.conta + ", Nome: " + count.nome + ", Balance: " + count.Deposito(valor));
+			
+			System.out.println("Entre o valor que deseja retirar: ");
+			double retirar = leia.nextDouble();
+			System.out.println("Dados atualizados: ");
+			System.out.println("Conta: " + count.conta + ", Nome:" + count.nome + ", Balance: " + count.Retirar(retirar, valor));
+		}
+		else {
+			count = new Conta(conta, nome);
+			System.out.println("Dados da conta: ");
+			System.out.println("Conta " + count.conta + ", Nome: " + count.nome + ", Balance: $0.00");
+		}
+		
+		leia.close();
+		
+		
+
+	}
+
+}

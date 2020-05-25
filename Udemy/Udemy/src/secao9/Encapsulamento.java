@@ -1,0 +1,29 @@
+package secao9;
+
+public class Encapsulamento {
+	
+	private String nome;
+	private double preco;
+	
+	// Se eu precisar alterar ou acessar o atributo private, eu devo usar métodos para tal
+	
+	public String getNome() {// Método para obter/acessar o nome. E o método pra retornar deve ser o mesmo tipo do atributo
+		// Exemplo: O atributo é tipo String, o método deve ser do tipo String
+		// Normalmente retorna apenas o atributo
+		return nome;
+	}
+	
+	public void setNome(String nome) {// Alterar o valor do atributo, usa-se o método "set"
+		// Como esse método é para alterar, ele não vai retornar nada. Vai apenas receber o valor pro atributo
+		this.nome = nome;
+	}
+	
+	public double getPreco() {
+		return preco;
+	}
+	
+	public void setPreco(double preco) {
+		this.preco = preco; // Atribuindo o valor para o atributo do objeto
+	}
+
+}

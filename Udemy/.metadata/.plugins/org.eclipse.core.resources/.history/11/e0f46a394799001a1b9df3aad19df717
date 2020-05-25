@@ -1,0 +1,16 @@
+package exercicio_1_secao8;
+
+import java.util.Scanner;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+		
+		Retangulo retangulo = new Retangulo();
+		double largura = leia.nextDouble();
+		double altura = leia.nextDouble();
+
+	}
+
+}

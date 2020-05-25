@@ -1,0 +1,20 @@
+package prova;
+
+public class Credito extends FormaDePagamento {
+	public String operadora = "";
+	public int numero = 0;
+	public int seguranca = 0;
+	
+	public boolean pagar(String data, double pagar) {
+		try {
+			
+			return true;
+		} catch (Exception e) {
+			// TODO: handle exception
+			return false;
+		}
+
+		
+	}
+
+}

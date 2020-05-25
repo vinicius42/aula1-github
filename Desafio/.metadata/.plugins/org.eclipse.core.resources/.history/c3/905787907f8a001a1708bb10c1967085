@@ -1,0 +1,21 @@
+package prova;
+
+import java.util.ArrayList;
+
+public class Maquina {
+	ArrayList<I_Produto> produto = new ArrayList<I_Produto>();
+	
+	public I_Produto EntregaProduto (String tipoproduto) {
+		I_Produto prod = null;
+		
+		switch (tipoproduto) {
+		case value:
+			
+			break;
+
+		default:
+			break;
+		}
+	}
+
+}

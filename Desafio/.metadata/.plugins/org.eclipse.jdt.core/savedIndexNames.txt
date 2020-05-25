@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+D:\ws-java\Desafio\.metadata\.plugins\org.eclipse.jdt.core
+4164811616.index
+2668175584.index
+4210876544.index
+100692314.index
+3565663445.index

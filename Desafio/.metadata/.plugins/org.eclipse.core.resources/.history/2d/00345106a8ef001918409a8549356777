@@ -1,0 +1,13 @@
+package turma;
+
+import java.util.ArrayList;
+
+public class Turma {
+	public String id = "";
+	public String nome = "";
+	public String curso = "";
+	public ArrayList<Aluno> aluno = new ArrayList<Aluno>();
+	
+	
+
+}

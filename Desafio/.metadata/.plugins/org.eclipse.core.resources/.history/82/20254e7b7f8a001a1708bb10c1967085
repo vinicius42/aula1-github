@@ -1,0 +1,9 @@
+package prova;
+
+import java.util.ArrayList;
+
+public class Maquina {
+	ArrayList<I_Produto> produto = new ArrayList<I_Produto>();
+	
+
+}

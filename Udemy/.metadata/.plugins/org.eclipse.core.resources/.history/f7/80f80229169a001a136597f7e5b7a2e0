@@ -1,0 +1,31 @@
+package exercicio_secao9;
+
+import java.util.Scanner;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+		
+		
+		System.out.println("Entre com o número da conta: ");
+		int conta = leia.nextInt();
+		
+		System.out.println("Entre com o nome da conta: ");
+		String nome = leia.nextLine();
+		
+		System.out.println("Deseja depositar algum valor ? (s/n)");
+		String deposito = leia.nextLine();
+		
+		if(deposito.equals("s")) {
+			System.out.println("Entre o valor do depósito: ");
+			double valor = leia.nextDouble();
+		}
+		
+		System.out.println();
+		System.out.println("Dados da conta: ");
+		Conta conta = new Conta(conta, nome, valor)
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package prova;
+
+public class FormaDePagamento implements I_Pagamento{
+	public String cpf = "";
+
+	@Override
+	public double pagar() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

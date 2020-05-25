@@ -1,0 +1,29 @@
+package prova;
+
+import java.util.Scanner;
+
+public class Debito extends FormaDePagamento {
+	public String banco = "";
+	public String agencia = "";
+	public String conta = "";
+
+	public Debito(String b, String a, double v, String c) {
+		banco = b;
+		agencia = a;
+		valor = v;
+		conta = c;
+	}
+	
+	public Debito() {
+		banco = "N/A";
+		conta = "";
+		valor = 0.0;
+	}
+
+	public double Pagar(Debito sacada, Debito depositada, Maquina maq) {
+		sacada = sacada - depositada - maq.CalcularTotal();
+		return sacada;
+
+	}
+
+}

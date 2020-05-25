@@ -1,0 +1,27 @@
+package desafio;
+
+import java.util.Scanner;
+
+public class desafio_1 {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		int numero = 0;
+		int x = numero;
+		int numero1 = 0;
+		int y = numero1;
+		
+		System.out.println("Favor informar um número: ");
+		x = teclado.nextInt();
+		
+		System.out.println("O número é: " + x);
+		
+		System.out.println("Favor informar outro número: ");
+		y = teclado.nextInt();
+		
+		System.out.println("O número é: " + y);
+		
+
+	}
+
+}

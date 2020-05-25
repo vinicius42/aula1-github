@@ -1,0 +1,7 @@
+package prova;
+
+public class FormaDePagamento implements I_Pagamento{
+	public String cpf = "";
+
+
+}

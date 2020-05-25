@@ -1,0 +1,34 @@
+package secao10;
+
+import java.util.Scanner;
+
+public class Vetores {
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+		
+		// Tipo valor
+		/*
+		 * int n = leia.nextInt(); double[] vetor = new double[n];
+		 * 
+		 * for (int i = 0; i < vetor.length; i++) { vetor[i] = leia.nextDouble(); }
+		 * 
+		 * double soma = 0.0; for (int i = 0; i < vetor.length; i++) { soma += vetor[i];
+		 * }
+		 * 
+		 * double media = soma / n;
+		 * 
+		 * System.out.println("Resultado: " + media);
+		 */
+		
+		
+		// Tipo referência
+		int n = leia.nextInt();
+		Produto[] vetor = new Produto[n];
+		
+		
+		leia.close();
+
+	}
+
+}

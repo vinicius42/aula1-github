@@ -1,0 +1,17 @@
+package desafio;
+
+import java.util.Scanner;
+
+public class desafio_1 {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		int numero = x;
+		
+		System.out.println("Favor informar um número: ");
+		x = teclado.NextInt()
+		
+
+	}
+
+}

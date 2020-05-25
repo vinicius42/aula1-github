@@ -1,0 +1,16 @@
+package prova;
+
+public class Digital extends FormaDePagamento{
+	public String email = "";
+	public int id;
+	public String moeda = "";
+	
+	public boolean Pagar(String data, String moeda, double valor) {
+		try {
+			return true;
+		} catch (Exception e) {
+			// TODO: handle exception
+			return false;
+		}
+	}
+}

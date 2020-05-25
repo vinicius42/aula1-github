@@ -1,0 +1,32 @@
+package ascii;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
+
+public class Ascii1 {
+
+	public static void main(String[] args) throws IOException {
+		  File file = new File( "Z.java" );
+		    Reader reader = new FileReader(file);
+		    int len = 0;
+		    int c;
+		    int iLine = 0;
+		    while( (c = reader.read()) != -1) {
+		        if( c == '\n' ){
+		            iLine++;
+		            System.out.println( "line " + iLine + " contains " +
+		                                len + " characters" );
+		            len = 0;
+		         } else {
+		            len++;
+		         }
+		    }
+		    reader.close();
+
+	}
+
+}

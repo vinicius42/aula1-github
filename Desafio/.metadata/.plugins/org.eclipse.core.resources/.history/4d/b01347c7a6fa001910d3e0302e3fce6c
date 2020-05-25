@@ -1,0 +1,22 @@
+package ascii;
+
+import java.io.*;  
+
+public class Ascii1{ 
+	private static final String writer = "D:\\testeAscii";
+	
+        public static void main(String[] args) throws FileNotFoundException{  
+        	FileInputStream stream = new FileInputStream("D://testeAscii.txt"); 
+            InputStreamReader streamReader = new InputStreamReader(stream); 
+            BufferedReader reader = new BufferedReader(streamReader);
+            
+            
+            
+            PrintWriter writer = new PrintWriter(stream);
+            
+            String linha = "";;
+            while(linha = reader.readLine() != null) {
+            	Writer.println(linha);
+            }
+        }  
+    }

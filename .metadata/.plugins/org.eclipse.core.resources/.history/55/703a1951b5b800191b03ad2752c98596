@@ -1,0 +1,13 @@
+package desafio;
+
+import java.util.Scanner;
+
+public class Desafio_media {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		int numero1, numero2, numero3, numero4 = 0;
+
+	}
+
+}

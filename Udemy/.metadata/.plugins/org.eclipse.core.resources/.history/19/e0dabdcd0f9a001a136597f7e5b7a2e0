@@ -1,0 +1,26 @@
+package secao9;
+
+public class Encapsulamento {
+	
+	private String nome;
+	private double preco;
+	
+	// Se eu precisar alterar ou acessar o atributo private, eu devo usar métodos para tal
+	
+	public String getName() {
+		return nome;
+	}
+	
+	public void setName(String nome) {
+		this.nome = nome;
+	}
+	
+	public double getPreco() {
+		return preco;
+	}
+	
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+
+}

@@ -1,0 +1,8 @@
+package prova;
+
+public class Credito extends FormaDePagamento {
+	public String operadora = "";
+	public int numero = 0;
+	public int seguranca = 0;
+
+}

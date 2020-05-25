@@ -1,0 +1,30 @@
+package secao8;
+
+import java.util.Scanner;
+
+public class MembrosEstaticos {
+	
+	public static final double PI = 3.14159;
+
+	public static void main(String[] args) {
+		// Membros instanciados possuem um comportamento diferente para cada um
+		
+		// Membro Estático, não pode ser instanciado, não criamos objeto daquela classe
+			// Math.sqrt(double)
+		
+		Scanner leia = new Scanner(System.in);
+		
+		System.out.println("Entre com o valor do raio: ");
+		double raio = leia.nextDouble();
+		
+		double c = circunferencia(raio);
+		
+		double v = volume(raio);
+		
+		System.out.println("Circunferência: ", c);
+		System.out.println("Circunferência: ", v);
+		
+
+	}
+
+}

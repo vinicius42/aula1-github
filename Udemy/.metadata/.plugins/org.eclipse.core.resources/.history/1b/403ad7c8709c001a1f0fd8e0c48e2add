@@ -1,0 +1,15 @@
+package secao10;
+
+public class Boxing {
+
+	public static void main(String[] args) {
+		// Boxing
+			// É o processo de conversão de um objeto tipo valor para um objeto tipo referência compatível
+		
+		// Exemplo
+		int x = 20;
+		Object obj = x;
+
+	}
+
+}

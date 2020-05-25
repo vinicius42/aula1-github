@@ -1,0 +1,23 @@
+package secao10;
+
+import java.util.Scanner;
+
+public class Matriz {
+
+	public static void main(String[] args) {
+		// Matriz é vetor de vetor
+		
+		Scanner leia = new Scanner(System.in);
+		
+		int n = leia.nextInt();
+		int[][] matriz = new int[n][n];
+		
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				matriz[i][j] = leia.nextInt();
+			}
+		}
+
+	}
+
+}

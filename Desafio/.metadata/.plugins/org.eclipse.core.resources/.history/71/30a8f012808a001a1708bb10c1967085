@@ -1,0 +1,41 @@
+package prova;
+
+import java.util.ArrayList;
+
+import polimorfismo_interface.I_item;
+
+public class Maquina {
+	ArrayList<I_Produto> produto = new ArrayList<I_Produto>();
+	
+	public I_Produto EntregaProduto (String tipoproduto) {
+		I_Produto prod = null;
+		
+		switch (tipoproduto) {
+		case "Café":
+			Cafe cafe = new Cafe();
+			prod = cafe;
+			break;
+		case "Salgadinho":
+			Salgadinho salgadinho = new Salgadinho();
+			prod = salgadinho;
+			break;
+		case "Refrigerante":
+			Refrigerante refri = new Refrigerante();
+			prod = refri;
+			break;
+
+		default:
+			break;
+		}
+		return prod;
+		
+		public double CalcularTotal() {
+			double total = 0.0;
+			for(I_Produto prod : this.produto) {
+				total += item.CalcularPreco();
+				
+			}
+			return total;
+	}
+
+}

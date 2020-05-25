@@ -1,0 +1,10 @@
+package prova;
+
+public class I_Produto {
+	public String nome = "";
+	public double preco = 0.0;
+	public int id;
+	
+	
+
+}

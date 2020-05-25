@@ -1,0 +1,22 @@
+package desafio;
+
+import java.util.Scanner;
+
+public class Desafio_par_impar {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		int numero = 0;
+		
+		System.out.println("Informe um número: ");
+		numero = teclado.nextInt();		
+		if (numero % 2 == 0) {
+			System.out.println("O número" + " "+ numero + +" " + "é par!");
+		}
+		else {
+			System.out.println("O número" + numero + "é ímpar");
+		}
+
+	}
+
+}

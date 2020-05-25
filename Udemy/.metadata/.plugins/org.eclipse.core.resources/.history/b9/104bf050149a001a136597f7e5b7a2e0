@@ -1,0 +1,14 @@
+package exercicio_secao9;
+
+import java.util.Scanner;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+		
+		
+
+	}
+
+}

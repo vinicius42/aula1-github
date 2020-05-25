@@ -1,0 +1,36 @@
+package secao8;
+
+import java.util.Scanner;
+
+public class MembrosEstaticos {
+	
+
+	public static void main(String[] args) {
+		// Membros instanciados possuem um comportamento diferente para cada um
+		
+		// Membro Estático, não pode ser instanciado, não criamos objeto daquela classe
+			// Math.sqrt(double)
+		
+		// Dentro do método estático (static) não é possível chamar métodos que não sejam estáticos dentro de um que seja estático
+		
+		Scanner leia = new Scanner(System.in);
+		
+		Calculadora_Estaticos calc = new Calculadora_Estaticos(); // Temos que instanciar o método pois ele não é estático e só assim conseguiremos usá-lo
+		// na classe main
+		
+		System.out.println("Entre com o valor do raio: ");
+		double raio = leia.nextDouble();
+		
+		double c = calc.circunferencia(raio);
+		
+		double v = calc.volume(raio);
+		
+		System.out.println("Circunferência: " + c);
+		System.out.println("Volume: " + v);
+		System.out.println("Valor de PI: " + calc.PI);
+		
+	}
+	
+	
+
+}

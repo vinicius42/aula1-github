@@ -1,0 +1,31 @@
+package ascii;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Ascii1 {
+
+	public static void main(String[] args) {
+		String linha = "";
+		try {
+			FileReader arquivo = new FileReader("D://testeAscii.txt");
+			BufferedReader leitor = new BufferedReader(arquivo);
+			
+			while(linha != null) {
+				linha = leitor.readLine(); // le a proxima linha
+				System.out.println(linha != null ? linha : "");
+			}
+			System.out.println(linha);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

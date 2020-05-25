@@ -1,0 +1,9 @@
+package ascii;
+
+import java.io.*;  
+
+public class Ascii1{  
+        public static void main(String[] args){  
+             
+        }  
+    }
